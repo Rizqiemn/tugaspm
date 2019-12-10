@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource"
+    tools:context=".Plants">
+
+    <ImageView
+        android:id="@+id/PicOfPlant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_ara">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/NameOfPlant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Pohon Ara"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/RoomTemperatue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="40dp"
+        android:text="Suhu Ruangan"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Temperatue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="60dp"
+        android:text="20&#176;C"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="120dp"
+        android:text="Cahaya"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Intencity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="140dp"
+        android:text="70&#37;"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/KondisiTanaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Kondisi Tanaman"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
