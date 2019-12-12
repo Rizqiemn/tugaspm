@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "29636176444",
+    "firebase_url": "https://bottani-23944.firebaseio.com",
+    "project_id": "bottani-23944",
+    "storage_bucket": "bottani-23944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29636176444:android:dcb8d4d4343ed29000f139",
+        "android_client_info": {
+          "package_name": "com.example.bottani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29636176444-spqako4ickbvblr7tfmpj2gsd90bd5oc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bottani",
+            "certificate_hash": "d0d47907fef90b80cbd18139ad857b0c58554307"
+          }
+        },
+        {
+          "client_id": "29636176444-1hj6ruu77beee6d3d7bv6tk0pcfbvbik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtylfpaMZaSgKvNLGFWSuZ71y-qBzdY0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29636176444-1hj6ruu77beee6d3d7bv6tk0pcfbvbik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
