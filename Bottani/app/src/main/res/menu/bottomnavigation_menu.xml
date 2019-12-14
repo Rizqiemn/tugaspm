@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home_menu"
+        android:id="@+id/homeFragment"
         android:title="@string/home"
         android:icon="@drawable/home"/>
 
     <item
-        android:id="@+id/search_menu"
+        android:id="@+id/fragmenStore"
         android:title="@string/store"
         android:icon="@drawable/store"/>
 
     <item
-        android:id="@+id/favorite_menu"
+        android:id="@+id/fragmenAccount"
         android:title="@string/account"
         android:icon="@drawable/account"/>
     <item
-        android:id="@+id/account_menu"
+        android:id="@+id/fragmenNotification"
         android:title="@string/notif"
         android:icon="@drawable/notification"/>
     <item
-        android:id="@+id/settings"
+        android:id="@+id/fragmentSettings"
         android:title="@string/settings"
         android:icon="@drawable/settings"/>
 </menu>
