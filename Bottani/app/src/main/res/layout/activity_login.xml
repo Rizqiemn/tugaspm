@@ -8,16 +8,12 @@
     android:orientation="vertical"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/gm"
         android:layout_width="match_parent"
-        android:layout_height="173dp"
-        android:fontFamily="@font/stalinist_one"
-        android:gravity="center"
-        android:text="BOTTANI"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_log"
+        android:padding="110dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,16 +23,18 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
             android:layout_weight="1"
             android:background="#9E9D9D"
-            app:srcCompat="@drawable/user" />
+            app:srcCompat="@drawable/ic_person_black_24dp" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="280dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_upass"
             app:boxCornerRadiusBottomEnd="5dp"
             app:boxCornerRadiusBottomStart="5dp"
             app:boxCornerRadiusTopEnd="5dp"
@@ -66,14 +64,16 @@
             android:id="@+id/imageView"
             android:layout_width="61dp"
             android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
             android:layout_weight="1"
             android:background="#FF9E9D9D"
             app:srcCompat="@android:drawable/ic_lock_idle_lock" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="280dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_upass"
             app:boxCornerRadiusBottomEnd="5dp"
             app:boxCornerRadiusBottomStart="5dp"
             app:boxCornerRadiusTopEnd="5dp"
@@ -101,13 +101,15 @@
         android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/bg_upass"
+        android:backgroundTint="#FFB300"
         android:shadowRadius="5"
         android:text="Login" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -128,7 +130,8 @@
             android:text="Sign Up here!"
             android:textColor="#000000"
             android:textColorHighlight="#00DFDF"
-            android:textColorHint="#00722C2C" />
+            android:textColorHint="#00722C2C"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

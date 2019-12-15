@@ -13,7 +13,6 @@ import kotlinx.android.synthetic.main.activity_signup.*
 
 class Signup: AppCompatActivity() {
     lateinit var ref: DatabaseReference
-    private var auth: FirebaseAuth? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +20,8 @@ class Signup: AppCompatActivity() {
         val nama = findViewById<EditText>(R.id.name)
         val user = findViewById<EditText>(R.id.it_user)
         val pass = findViewById<EditText>(R.id.it_pass)
-        val database = FirebaseDatabase.getInstance()
-        ref = database.getReference("Users")
-        auth = FirebaseAuth.getInstance()
-        button.setOnClickListener {
+        ref = FirebaseDatabase.getInstance().getReference("USERS")
+        btn_signup.setOnClickListener {
             if (nama.text!!.isEmpty()) {
                 Toast.makeText(this,"Kolom tidak boleh kosong", Toast.LENGTH_LONG).show()
                 nama.requestFocus()
@@ -38,21 +35,20 @@ class Signup: AppCompatActivity() {
                 Toast.makeText(this,"Harap diisi minimal 8 karakter",Toast.LENGTH_LONG).show()
                 pass.requestFocus()
             }else {
-                val intent = Intent(this@Signup, Login::class.java)
-                // Write a message to the database
-                // Write a message to the database
-                startActivity(intent)
                 savedata()
+                val intent = Intent(this@Signup, Login::class.java)
+                startActivity(intent)
+
             }
         }
     }
     private fun savedata() {
         val nama = name.text.toString()
-        val user = it_user.text.toString()
+        val uname = it_user.text.toString()
         val pass = it_pass.text.toString()
         val userId = ref.push().key.toString()
-        val inituser = Users(user,nama,pass)
-        ref.child(userId).setValue(inituser).addOnCompleteListener {
+        val user = Users(uname,nama,pass)
+        ref.child(userId).setValue(user).addOnCompleteListener {
             Toast.makeText(this, "Successs", Toast.LENGTH_SHORT).show()
         }
     }
